@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-gtoc",
   "description": "Get content of Gitbook",
   "main": "index.js",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "engines": {
     "gitbook": "*"
   },
@@ -11,7 +11,6 @@
     "type": "git",
     "url": "https://github.com/boycgit/gitbook-plugin-gtoc.git"
   },
-  "license": "Apache 2",
   "bugs": {
     "url": "https://github.com/boycgit/gitbook-plugin-gtoc/issues"
   }, 

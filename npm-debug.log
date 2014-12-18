@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\nodejs\\\\node.exe',
+1 verbose cli   'D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink D:\nodejs\\node.exe
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\3a52ce78-.lock
+11 verbose tar pack [ 'C:\\Users\\bocheng.zbc\\AppData\\Roaming\\npm-cache\\gitbook-plugin-gtoc\\0.0.2\\package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\gitbook-plugin-gtoc\0.0.2\package.tgz
+13 verbose folder .
+14 info prepublish gitbook-plugin-gtoc@0.0.2
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\1f1177db-tar.lock
+17 silly lockFile 036d8976-ok-plugin-gtoc-0-0-2-package-tgz tar://C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\gitbook-plugin-gtoc\0.0.2\package.tgz
+18 verbose lock tar://C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\gitbook-plugin-gtoc\0.0.2\package.tgz C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\036d8976-ok-plugin-gtoc-0-0-2-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 036d8976-ok-plugin-gtoc-0-0-2-package-tgz tar://C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\gitbook-plugin-gtoc\0.0.2\package.tgz
+22 silly lockFile 036d8976-ok-plugin-gtoc-0-0-2-package-tgz tar://C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\gitbook-plugin-gtoc\0.0.2\package.tgz
+23 silly lockFile bb6f2d7f-itbook-plugin-gtoc-0-0-2-package C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\gitbook-plugin-gtoc\0.0.2\package
+24 verbose lock C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\gitbook-plugin-gtoc\0.0.2\package C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\bb6f2d7f-itbook-plugin-gtoc-0-0-2-package.lock
+25 silly lockFile bb6f2d7f-itbook-plugin-gtoc-0-0-2-package C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\gitbook-plugin-gtoc\0.0.2\package
+26 silly lockFile bb6f2d7f-itbook-plugin-gtoc-0-0-2-package C:\Users\bocheng.zbc\AppData\Roaming\npm-cache\gitbook-plugin-gtoc\0.0.2\package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'gitbook-plugin-gtoc',
+29 silly publish   description: 'Get content of Gitbook',
+29 silly publish   main: 'index.js',
+29 silly publish   version: '0.0.2',
+29 silly publish   engines: { gitbook: '*' },
+29 silly publish   homepage: 'https://github.com/boycgit/gitbook-plugin-gtoc',
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/boycgit/gitbook-plugin-gtoc.git' },
+29 silly publish   license: 'Apache 2',
+29 silly publish   bugs: { url: 'https://github.com/boycgit/gitbook-plugin-gtoc/issues' },
+29 silly publish   gitHead: 'd7dabb1a2319c270428203e1a7271df44174646a',
+29 silly publish   readme: 'GitBook Table Of Content Plugin\r\n==============\r\n\r\n为GitBook生成目录结构\r\n\r\n\r\n\r\n\r\n\r\n### TODO\r\n - 添加带“回到顶部”\r\n - 添加滚动高显功能\r\n - 配置：\r\n     + 抽取层级\r\n     + 放在左边还是右边\r\n     + 跟随还是放在开头（跟随的时候可以折叠，包含“回到顶部”按钮）\r\n - 绑定快捷键\'t\'，用于toggle显示/隐藏\r\n\r\n\r\n### 修改记录\r\n\r\n2014.12.18\r\n\r\n - 使用$.guid给不同的标题赋Id\r\n - 使用tagName给不同层级标题赋值类名\r\n - 添加动画效果',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   _id: 'gitbook-plugin-gtoc@0.0.2',
+29 silly publish   scripts: {},
+29 silly publish   _shasum: '21b3f7ab50e81cdd4a02e0b7fb6f9af64f03429c',
+29 silly publish   _from: '.' }
+30 verbose request where is /gitbook-plugin-gtoc
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 1cddb5ecd67c78be
+33 verbose url raw /gitbook-plugin-gtoc
+34 verbose url resolving [ 'https://registry.npmjs.org/', './gitbook-plugin-gtoc' ]
+35 verbose url resolved https://registry.npmjs.org/gitbook-plugin-gtoc
+36 verbose request where is https://registry.npmjs.org/gitbook-plugin-gtoc
+37 info trying registry request attempt 1 at 20:11:32
+38 http PUT https://registry.npmjs.org/gitbook-plugin-gtoc
+39 http 403 https://registry.npmjs.org/gitbook-plugin-gtoc
+40 verbose headers { date: 'Thu, 18 Dec 2014 12:10:44 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '2588',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-ty67-TYO',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1418904643.994014,VS0,VE244',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 0.0.2
+42 error old={"name":"gitbook-plugin-gtoc","description":"Get content of Gitbook","main":"index.js","version":"0.0.2","engines":{"gitbook":"*"},"license":"Apache 2","gitHead":"51bcfddd8cb9f0a7c8f85962ba8e1ae984371c08","_id":"gitbook-plugin-gtoc@0.0.2","scripts":{},"_shasum":"3c3d4b3437da8af2043932e6d4f1643945dc34d5","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"jscon","email":"inningbo123@sina.com"},"maintainers":[{"name":"jscon","email":"inningbo123@sina.com"}],"dist":{"shasum":"3c3d4b3437da8af2043932e6d4f1643945dc34d5","tarball":"http://registry.npmjs.org/gitbook-plugin-gtoc/-/gitbook-plugin-gtoc-0.0.2.tgz"}}
+42 error new={"name":"gitbook-plugin-gtoc","description":"Get content of Gitbook","main":"index.js","version":"0.0.2","engines":{"gitbook":"*"},"homepage":"https://github.com/boycgit/gitbook-plugin-gtoc","repository":{"type":"git","url":"https://github.com/boycgit/gitbook-plugin-gtoc.git"},"license":"Apache 2","bugs":{"url":"https://github.com/boycgit/gitbook-plugin-gtoc/issues"},"gitHead":"d7dabb1a2319c270428203e1a7271df44174646a","readme":"GitBook Table Of Content Plugin\u000d\u000a==============\u000d\u000a\u000d\u000a为GitBook生成目录结构\u000d\u000a\u000d\u000a\u000d\u000a\u000d\u000a\u000d\u000a\u000d\u000a### TODO\u000d\u000a - 添加带“回到顶部”\u000d\u000a - 添加滚动高显功能\u000d\u000a - 配置：\u000d\u000a     + 抽取层级\u000d\u000a     + 放在左边还是右边\u000d\u000a     + 跟随还是放在开头（跟随的时候可以折叠，包含“回到顶部”按钮）\u000d\u000a - 绑定快捷键't'，用于toggle显示/隐藏\u000d\u000a\u000d\u000a\u000d\u000a### 修改记录\u000d\u000a\u000d\u000a2014.12.18\u000d\u000a\u000d\u000a - 使用$.guid给不同的标题赋Id\u000d\u000a - 使用tagName给不同层级标题赋值类名\u000d\u000a - 添加动画效果","readmeFilename":"README.md","_id":"gitbook-plugin-gtoc@0.0.2","scripts":{},"_shasum":"21b3f7ab50e81cdd4a02e0b7fb6f9af64f03429c","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"jscon","email":"inningbo123@sina.com"},"maintainers":[{"name":"jscon","email":"inningbo123@sina.com"}],"dist":{"shasum":"21b3f7ab50e81cdd4a02e0b7fb6f9af64f03429c","tarball":"http://registry.npmjs.org/gitbook-plugin-gtoc/-/gitbook-plugin-gtoc-0.0.2.tgz"}}: gitbook-plugin-gtoc
+42 error     at RegClient.<anonymous> (D:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+42 error     at Request._callback (D:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+42 error     at Request.self.callback (D:\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (D:\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (D:\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:943:16
+42 error     at process._tickCallback (node.js:419:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Windows_NT 6.1.7601
+45 error command "D:\\nodejs\\\\node.exe" "D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error cwd C:\Users\bocheng.zbc\AppData\Roaming\npm\node_modules\gitbook\node_modules\gitbook-plugin-gtoc
+47 error node -v v0.10.33
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
