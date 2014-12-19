@@ -46,7 +46,6 @@ define([
             nId = "gtoc-title-" + ($.guid++);//创建新的hrefID
             el.attr("id",nId);// 重新给节点赋值Id
             el.addClass("gtoc-header");
-            // topValueSet.push(el.offset().top);// 将该条目到顶部的距离获取过来
 
             // 每一行链接的字符串，使用tagName创建层级类名
             newLine =
@@ -73,13 +72,10 @@ define([
 
         // 默认抽取h2,h3标题
         // 定义toc字符串的“头部”
-        var toc = "<nav role='navigation' class='gitbook-table-of-contents'>" +
-                  "<div class='gtoc-menu'>"+      
-                  "<h2>目录</h2>";
-
-
-        // 存储每个条目到顶部的距离值
-        // var topValueSet = [];
+        var toc = "<nav role='navigation'>" +
+                      "<div class='gitbook-table-of-contents'>"+
+                          "<div class='gtoc-menu'>"+      
+                          "<h2>目录</h2>";
 
         var titleLevel = {"l1":0,"l2":0,"order":""};
 
@@ -106,10 +102,11 @@ define([
         // 拼接toc的“尾部”
         toc +=
             "</div>"+
+            "</div>"+
                 "<div class='gtoc-menu-min'>"+
-                "<a href='javascript:void(0)' target='_self' class='icon icon-top'></a>"+
-                "<a href='javascript:void(0)' target='_self' class='icon icon-toggle'>TOC</a>"+
-            "</div>"
+                "<a href='javascript:void(0)' class=''><span class='word word-normal icon icon-top'></span><span class='word word-hover'>回到顶部</span></a>"+
+                "<a title='快捷键(T)' href='javascript:void(0)' class='state-hover j-toggle-menu'><span class='word word-normal'>TOC</span><span class='word word-hover'>切换目录</span></a>"+
+            "</div>"+
           "</nav>";
 
         return $(toc); // 返回目录结构jQuery对象

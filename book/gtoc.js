@@ -2,7 +2,7 @@ require.config({
     "baseUrl":"../gitbook/plugins"
 });
 
-require(["gitbook","gitbook-plugin-gtoc/mod/content"], function(gitbook,content) {
+require(["gitbook","gitbook-plugin-gtoc/mod/content","gitbook-plugin-gtoc/mod/interaction"], function(gitbook,content,action) {
 
     // 配置默认参数
     var defaultConfig = {
@@ -26,11 +26,8 @@ require(["gitbook","gitbook-plugin-gtoc/mod/content"], function(gitbook,content)
             $toc.addClass("state-min");
         };
 
-        // 点击shrink按钮，改变状态
-        $toc.find(".icon-toggle").on("click",function(){
-            $toc.toggleClass("state-min");
-        });
-
+        // 交互初始化
+        action.init($toc);
 
     };
 
@@ -39,7 +36,6 @@ require(["gitbook","gitbook-plugin-gtoc/mod/content"], function(gitbook,content)
     var init = function() {
         var config = {};
         resetToc(config);
-
     };
 
     // 当刷新页面的时候，重新创建目录

@@ -10,32 +10,50 @@
 }
 
 
-@c-red:#E73828;
-@c-orange-1:#EA5414;
-@c-gray:#C9CACA;
-
-@width-toc:250px;
-.gitbook-table-of-contents{
-	position: relative;
-	padding:0 15px 15px 15px;
-	background-color:rgba(255,255,255,1);
+/* fixed垂直居中 */
+.fixed-common{
+	.opacity(1);
 	position: fixed;
-	right: 20px;
-	border: 1px solid @c-gray;
-	border-top:5px solid @c-orange-1;
 	top: 50%;
-
-	width:@width-toc;
-	z-index:99;
-
 	.translate3d(0,-50%,0);
 	.transition(1s);
 
 
 	// 动画状态
-	.state-min&{
-		.translate3d((@width-toc+20),-50%,0);
+	.state-min &{
+		.translate3d((@width_toc+@pos_offset),-50%,0);
 	}
+
+	// 隐藏状态，只更改透明度
+	.state-hide &{
+		.opacity(0);
+	}
+}
+
+
+@c-red:#E73828;
+@c-orange-1:#EA5414;
+@c-gray:#C9CACA;
+
+@width_toc:250px;
+@pos_offset:20px;
+.gitbook-table-of-contents{
+	padding:0 15px 15px 15px;
+	background-color:rgba(255,255,255,1);
+	right: @pos_offset;
+	border: 1px solid @c-gray;
+	border-top:5px solid @c-orange-1;
+	width:@width_toc;
+	z-index:99;
+	
+
+	// 超过窗口就显示滚动条
+	max-height: 100%;
+	overflow-y: scroll;
+
+
+	.fixed-common;
+
 
 	h2{
 		color:@c-red;
@@ -105,11 +123,11 @@
 .gtoc-menu-min{
 
 	@size:40px;
-
-	position: absolute;
-	bottom: 50%;
 	margin-bottom: -40px;
-	left: -40px;
+	right: @size + @width_toc - @pos_offset;
+
+	.fixed-common;
+
 
 	a{
 		display: block;
@@ -130,6 +148,29 @@
 
 	.icon-top{
 		background:@c-orange-1 url(https://lh3.googleusercontent.com/-o86W7i9pt84/VJK1tQLDoLI/AAAAAAAACM0/tC4qyX9d08Y/s800/icon-up_03.png) no-repeat center center;
+	}
+
+
+	// hover 文字
+	.word{
+		display: inline-block;
+		float:left;
+		width:@size - 2;
+		height:@size - 3;
+	}
+
+	.word-hover{
+		display: none;
+	}
+
+	.state-hover{
+		.word-normal{
+			display: none;
+		}
+		.word-hover{
+			display: inline-block;
+			line-height: 18px;			
+		}
 	}
 
 }
