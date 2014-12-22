@@ -25,6 +25,12 @@ define([
             $toc.toggleClass("state-min");
         });
 
+        // 点击回到顶部按钮
+        $toc.find(".j-scrollup").on("click",function(){
+            $(".book-body").animate({scrollTop:0},'1000',"linear");// 添加动画
+            console.log("message");
+        })
+
         // hover的时候更改名字
         $toc.find(".gtoc-menu-min .word").mouseenter(function(){
             $(this).parent().addClass("state-hover");

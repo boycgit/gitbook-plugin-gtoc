@@ -8,6 +8,7 @@ require(["gitbook","gitbook-plugin-gtoc/mod/content","gitbook-plugin-gtoc/mod/in
     var defaultConfig = {
         "hide":true         // 默认是隐藏模式
         ,"el":"h2,h3"       // 待抽取元素名，默认是抽取h2,h3标题，标准的jQuery选择表达式
+        ,"elevator":true    // 默认有电梯效果
 
     };
 
@@ -28,6 +29,11 @@ require(["gitbook","gitbook-plugin-gtoc/mod/content","gitbook-plugin-gtoc/mod/in
 
         // 交互初始化
         action.init($toc);
+
+        // 默认开启“电梯”效果
+        if(_config.elevator){
+            
+        }
 
     };
 

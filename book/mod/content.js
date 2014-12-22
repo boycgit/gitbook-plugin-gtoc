@@ -104,7 +104,7 @@ define([
             "</div>"+
             "</div>"+
                 "<div class='gtoc-menu-min'>"+
-                "<a href='javascript:void(0)' class=''><span class='word word-normal icon icon-top'></span><span class='word word-hover'>回到顶部</span></a>"+
+                "<a href='javascript:void(0)' class='j-scrollup'><span class='word word-normal icon icon-top'></span><span class='word word-hover'>回到顶部</span></a>"+
                 "<a title='快捷键(T)' href='javascript:void(0)' class='state-hover j-toggle-menu'><span class='word word-normal'>TOC</span><span class='word word-hover'>切换目录</span></a>"+
             "</div>"+
           "</nav>";
