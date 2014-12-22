@@ -67,6 +67,12 @@
   -o-transition: 1s;
   transition: 1s;
 }
+.color-theme-1 .gitbook-table-of-contents {
+  background-color: #f7f1dc;
+}
+.color-theme-2 .gitbook-table-of-contents {
+  background-color: #2b2b2b;
+}
 .state-scroll .gitbook-table-of-contents {
   overflow-y: scroll;
 }

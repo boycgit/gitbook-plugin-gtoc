@@ -35,11 +35,23 @@
 @c-orange-1:#EA5414;
 @c-gray:#C9CACA;
 
+@color-theme-1:#f3eacb;
+@color-theme-2:#111;
+
 @width_toc:250px;
 @pos_offset:20px;
 .gitbook-table-of-contents{
 	padding:0 15px 15px 15px;
+	
 	background-color:rgba(255,255,255,1);
+	.color-theme-1 &{
+		background-color: lighten(@color-theme-1, 4%)
+	}
+
+	.color-theme-2 &{
+		background-color: lighten(@color-theme-2, 10%)
+	}
+
 	right: @pos_offset;
 	border: 1px solid @c-gray;
 	border-top:5px solid @c-orange-1;

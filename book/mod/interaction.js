@@ -34,7 +34,7 @@ define([
 
 
         // 更改宽口的大小
-        console.log($toc.find(".gitbook-table-of-contents").height());      
+        // console.log($toc.find(".gitbook-table-of-contents").height());      
         var height_toc = $toc.find(".gitbook-table-of-contents").height();
 
         $(window).on("resize",function(){
