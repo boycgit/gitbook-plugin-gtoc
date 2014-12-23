@@ -2,7 +2,11 @@ require.config({
     "baseUrl":"../gitbook/plugins"
 });
 
-require(["gitbook","gitbook-plugin-gtoc/mod/content","gitbook-plugin-gtoc/mod/interaction"], function(gitbook,content,action) {
+require(["gitbook","gitbook-plugin-gtoc/mod/content",
+         "gitbook-plugin-gtoc/mod/interaction",
+         "gitbook-plugin-gtoc/mod/elevator"
+         ], 
+        function(gitbook,content,action,elevator) {
 
     // 配置默认参数
     var defaultConfig = {
@@ -32,7 +36,7 @@ require(["gitbook","gitbook-plugin-gtoc/mod/content","gitbook-plugin-gtoc/mod/in
 
         // 默认开启“电梯”效果
         if(_config.elevator){
-            
+            elevator.init($toc);// 初始化电梯
         }
 
     };

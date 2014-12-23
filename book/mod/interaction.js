@@ -27,9 +27,10 @@ define([
 
         // 点击回到顶部按钮
         $toc.find(".j-scrollup").on("click",function(){
-            $(".book-body").animate({scrollTop:0},'1000',"linear");// 添加动画
-            console.log("message");
-        })
+            // 当宽度大于1240时添加动画，body-inner是固定高度的
+            // 当宽度小于1240时添加动画，body-inner是变高度，book-body是固定高度的
+            $(".body-inner,.book-body").animate({scrollTop:0},'1000',"linear");
+        });
 
         // hover的时候更改名字
         $toc.find(".gtoc-menu-min .word").mouseenter(function(){

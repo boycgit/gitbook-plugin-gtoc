@@ -109,8 +109,11 @@
 .gitbook-table-of-contents .gtoc-level:hover {
   overflow: visible;
 }
+.gitbook-table-of-contents .gtoc-level.state-current {
+  background-color: #f0f0f0;
+}
 .gitbook-table-of-contents .gtoc-level-h2 {
-  margin-left: 15px;
+  padding-left: 15px;
   font-size: 16px;
   margin-top: 15px;
 }
@@ -119,7 +122,7 @@
   color: #ea5414;
 }
 .gitbook-table-of-contents .gtoc-level-h3 {
-  margin-left: 39px;
+  padding-left: 39px;
   font-size: 15px;
   margin-top: 5px;
 }
