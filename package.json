@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-gtoc",
   "description": "Get content of Gitbook",
   "main": "index.js",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "engines": {
     "gitbook": "*"
   },
