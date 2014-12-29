@@ -21,6 +21,7 @@ GitBook Table Of Content Plugin
  - 可隐藏GTOC
  - 回到顶部功能，可配置是否有“电梯”效果
  - 适配Gitbook的“Sepia”、“Night”主题
+ - 抽离出配置项
 
 ### 快捷键
 【t】:收缩/展现目录
