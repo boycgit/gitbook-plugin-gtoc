@@ -50,6 +50,9 @@ GitBook Table Of Content Plugin
 
 ### 修改记录
 
+**2015.01.04**
+ - 修复“初始化组件，内容太长也不会显示滚动条”的bug
+
 **2014.12.24**
  - 完成电梯功能
  - 解决ScrollTop的奇怪问题，“只有在Chrome打开控制台情况下'回到顶部'按钮才有有效”，这是因为当宽度大于1240时body-inner是固定高度的，而当宽度小于1240时，body-inner是变高度，book-body是固定高度的；原始代码只对book-body设置scrollTop动画，所以打开Chrome窗口的时候（意外地使得浏览器窗口小于1240）才有动画；已经修复。

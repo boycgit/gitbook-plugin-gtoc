@@ -42,16 +42,24 @@ define([
 
         // 更改宽口的大小
         // console.log($toc.find(".gitbook-table-of-contents").height());      
-        var height_toc = $toc.find(".gitbook-table-of-contents").height();
+        var height_toc = $toc.find(".gtoc-menu").height();
 
-        $(window).on("resize",function(){
-            // 当窗口高度小于内容的时候，添加.state-scroll
-            // 这样目录就能够出现滚动条了
-            if($(this).height() < height_toc){
+        // 当窗口高度小于内容的时候，添加.state-scroll
+        // 这样目录就能够出现滚动条了
+        var toggleScroll = function(){
+            if($(window).height() < height_toc){
                 $toc.addClass("state-scroll");
             }else{
                 $toc.removeClass("state-scroll");
             }
+        }
+
+        // 页面刚载入需要
+        toggleScroll();
+        
+        // 响应页面伸缩事件
+        $(window).on("resize",function(){
+            toggleScroll();
         });
 
 
